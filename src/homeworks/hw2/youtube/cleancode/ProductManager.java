@@ -14,12 +14,14 @@ public class ProductManager implements IProductService{
         System.out.println("2 - USD olarak ödeme yapmak için.");
         int paymentType = scanner.nextInt();
         double price = product.getPrice();
+
+        //kötü kod
         if(paymentType == 1){
           //  double price = product.getPrice();
             System.out.println("Alışverişiniz için teşekkür ederiz! :)))");
             System.out.println("Ürünlerinizin toplam fiyatı: " + product.getPrice());
         }
-        else if(paymentType ==2){
+        else if(paymentType == 2){
             price = product.getPrice();
             CurrencyRate currencyRate = new CurrencyRate(price,1);
             price = iBankService.convertRate(currencyRate);
@@ -32,6 +34,12 @@ public class ProductManager implements IProductService{
         System.out.println("Öğren indirimi olduğunuz için %10 indirim kazandınız! :)))");
         System.out.println("Ürünlerinizin toplam fiyatı: " + product.getPrice());
         System.out.println("Öğrenci indirimli fiyatınız: " + price);
+    }
+    public void sell(Product product, Military military){
+        double price = product.getPrice() * military.getDiscountRate();
+        System.out.println("Askeri indirimi olduğu için %50 indirim kazandınız! :)))");
+        System.out.println("Ürünlerinizin toplam fiyatı: " + product.getPrice());
+        System.out.println("Askeri indirimli fiyatınız: " + price);
     }
 
 }
