@@ -15,7 +15,7 @@ public class Main {
 
 
         productManager.sell(product1,customer1);
-        productManager.sell(product1,customer2);
+
 
 
 
