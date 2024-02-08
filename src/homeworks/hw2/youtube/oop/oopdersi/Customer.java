@@ -1,5 +1,6 @@
 package homeworks.hw2.youtube.oop.oopdersi;
 
+//abstrac classlar newle çağırılmaz
 public abstract class Customer {
     private int id;
     private String city;

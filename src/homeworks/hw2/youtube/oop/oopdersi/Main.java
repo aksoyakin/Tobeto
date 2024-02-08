@@ -11,6 +11,13 @@ public class Main {
         CustomerManager customerManager = new CustomerManager(company1,new MilitaryCreditManager());
         customerManager.giveCredit();
 
+        person1.setCity("akin");
+
+
+
+
+
+
 
 
     }
