@@ -1,4 +1,4 @@
-package tobetocalisma;
+package algorithms.company;
 
 public class MaviYaka implements Calisan{
     @Override

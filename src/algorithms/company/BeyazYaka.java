@@ -1,4 +1,4 @@
-package tobetocalisma;
+package algorithms.company;
 
 public abstract class BeyazYaka implements Calisan{
     // abstact == soyut.

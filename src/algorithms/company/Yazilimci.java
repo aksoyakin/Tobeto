@@ -1,4 +1,4 @@
-package tobetocalisma;
+package algorithms.company;
 
 public class Yazilimci extends BeyazYaka{
 

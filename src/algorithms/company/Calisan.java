@@ -1,4 +1,4 @@
-package tobetocalisma;
+package algorithms.company;
 
 
 //arayüz
